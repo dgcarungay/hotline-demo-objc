@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		823476DF2835E83C0046BDDE /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823476DE2835E83C0046BDDE /* UserNotifications.framework */; };
+		826CD459287FD0AD002A7024 /* MeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826CD458287FD0AD002A7024 /* MeetingViewController.m */; };
+		8279B7612A6EDD6600C2DC6F /* WebRTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8279B7602A6EDD6600C2DC6F /* WebRTCViewController.m */; };
+		829F86F12834D91800B86A70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 829F86F02834D91800B86A70 /* AppDelegate.m */; };
+		829F86F42834D91800B86A70 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 829F86F32834D91800B86A70 /* SceneDelegate.m */; };
+		829F86F72834D91800B86A70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829F86F62834D91800B86A70 /* ViewController.m */; };
+		829F86FA2834D91800B86A70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829F86F82834D91800B86A70 /* Main.storyboard */; };
+		829F86FC2834D91800B86A70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829F86FB2834D91800B86A70 /* Assets.xcassets */; };
+		829F86FF2834D91800B86A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829F86FD2834D91800B86A70 /* LaunchScreen.storyboard */; };
+		829F87022834D91800B86A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 829F87012834D91800B86A70 /* main.m */; };
+		829F870A2834F1CD00B86A70 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F87092834F1CD00B86A70 /* PushKit.framework */; };
+		829F870C2834F1D300B86A70 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F870B2834F1D300B86A70 /* CallKit.framework */; };
+		829F87132834F2FD00B86A70 /* CallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 829F87122834F2FD00B86A70 /* CallManager.m */; };
+		887E8BA9C7B463C1F885AB4D /* Pods_Hotline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42D2A4EBA826720FFB60229 /* Pods_Hotline.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1433E65857640E4AF46DE33D /* Pods-Hotline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotline.release.xcconfig"; path = "Target Support Files/Pods-Hotline/Pods-Hotline.release.xcconfig"; sourceTree = "<group>"; };
+		823476DD2835E7B90046BDDE /* Hotline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hotline.entitlements; sourceTree = "<group>"; };
+		823476DE2835E83C0046BDDE /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		826CD457287FD0AD002A7024 /* MeetingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeetingViewController.h; sourceTree = "<group>"; };
+		826CD458287FD0AD002A7024 /* MeetingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetingViewController.m; sourceTree = "<group>"; };
+		8279B75F2A6EDD6600C2DC6F /* WebRTCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebRTCViewController.h; sourceTree = "<group>"; };
+		8279B7602A6EDD6600C2DC6F /* WebRTCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRTCViewController.m; sourceTree = "<group>"; };
+		829F86EC2834D91800B86A70 /* Hotline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		829F86EF2834D91800B86A70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		829F86F02834D91800B86A70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		829F86F22834D91800B86A70 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		829F86F32834D91800B86A70 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		829F86F52834D91800B86A70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		829F86F62834D91800B86A70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		829F86F92834D91800B86A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		829F86FB2834D91800B86A70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		829F86FE2834D91800B86A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		829F87002834D91800B86A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829F87012834D91800B86A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		829F87092834F1CD00B86A70 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		829F870B2834F1D300B86A70 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		829F87112834F2FD00B86A70 /* CallManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallManager.h; sourceTree = "<group>"; };
+		829F87122834F2FD00B86A70 /* CallManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallManager.m; sourceTree = "<group>"; };
+		A42D2A4EBA826720FFB60229 /* Pods_Hotline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C805309C9B65A4C5988AD239 /* Pods-Hotline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotline.debug.xcconfig"; path = "Target Support Files/Pods-Hotline/Pods-Hotline.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		829F86E92834D91800B86A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829F870A2834F1CD00B86A70 /* PushKit.framework in Frameworks */,
+				829F870C2834F1D300B86A70 /* CallKit.framework in Frameworks */,
+				823476DF2835E83C0046BDDE /* UserNotifications.framework in Frameworks */,
+				887E8BA9C7B463C1F885AB4D /* Pods_Hotline.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		829F86E32834D91800B86A70 = {
+			isa = PBXGroup;
+			children = (
+				829F86EE2834D91800B86A70 /* Hotline */,
+				829F86ED2834D91800B86A70 /* Products */,
+				829F87082834F1CD00B86A70 /* Frameworks */,
+				EBB26DCC5B353DDC37C85CE8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		829F86ED2834D91800B86A70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				829F86EC2834D91800B86A70 /* Hotline.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		829F86EE2834D91800B86A70 /* Hotline */ = {
+			isa = PBXGroup;
+			children = (
+				823476DD2835E7B90046BDDE /* Hotline.entitlements */,
+				829F87102834F2C100B86A70 /* Delegates */,
+				829F870F2834F2B400B86A70 /* Storyboards */,
+				829F870E2834F2AC00B86A70 /* ViewControllers */,
+				829F870D2834F2A400B86A70 /* Models */,
+				829F86FB2834D91800B86A70 /* Assets.xcassets */,
+				829F87002834D91800B86A70 /* Info.plist */,
+				829F87012834D91800B86A70 /* main.m */,
+			);
+			path = Hotline;
+			sourceTree = "<group>";
+		};
+		829F87082834F1CD00B86A70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				823476DE2835E83C0046BDDE /* UserNotifications.framework */,
+				829F870B2834F1D300B86A70 /* CallKit.framework */,
+				829F87092834F1CD00B86A70 /* PushKit.framework */,
+				A42D2A4EBA826720FFB60229 /* Pods_Hotline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		829F870D2834F2A400B86A70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				829F87112834F2FD00B86A70 /* CallManager.h */,
+				829F87122834F2FD00B86A70 /* CallManager.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		829F870E2834F2AC00B86A70 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				829F86F52834D91800B86A70 /* ViewController.h */,
+				829F86F62834D91800B86A70 /* ViewController.m */,
+				826CD457287FD0AD002A7024 /* MeetingViewController.h */,
+				826CD458287FD0AD002A7024 /* MeetingViewController.m */,
+				8279B75F2A6EDD6600C2DC6F /* WebRTCViewController.h */,
+				8279B7602A6EDD6600C2DC6F /* WebRTCViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		829F870F2834F2B400B86A70 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				829F86F82834D91800B86A70 /* Main.storyboard */,
+				829F86FD2834D91800B86A70 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		829F87102834F2C100B86A70 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				829F86EF2834D91800B86A70 /* AppDelegate.h */,
+				829F86F02834D91800B86A70 /* AppDelegate.m */,
+				829F86F22834D91800B86A70 /* SceneDelegate.h */,
+				829F86F32834D91800B86A70 /* SceneDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		EBB26DCC5B353DDC37C85CE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C805309C9B65A4C5988AD239 /* Pods-Hotline.debug.xcconfig */,
+				1433E65857640E4AF46DE33D /* Pods-Hotline.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		829F86EB2834D91800B86A70 /* Hotline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 829F87052834D91800B86A70 /* Build configuration list for PBXNativeTarget "Hotline" */;
+			buildPhases = (
+				BFFE7271A5CA9E3480EBBE52 /* [CP] Check Pods Manifest.lock */,
+				829F86E82834D91800B86A70 /* Sources */,
+				829F86E92834D91800B86A70 /* Frameworks */,
+				829F86EA2834D91800B86A70 /* Resources */,
+				8AC46F0F13A629AF65625F7E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hotline;
+			productName = Hotline;
+			productReference = 829F86EC2834D91800B86A70 /* Hotline.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		829F86E42834D91800B86A70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					829F86EB2834D91800B86A70 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 829F86E72834D91800B86A70 /* Build configuration list for PBXProject "Hotline" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 829F86E32834D91800B86A70;
+			productRefGroup = 829F86ED2834D91800B86A70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				829F86EB2834D91800B86A70 /* Hotline */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		829F86EA2834D91800B86A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829F86FF2834D91800B86A70 /* LaunchScreen.storyboard in Resources */,
+				829F86FC2834D91800B86A70 /* Assets.xcassets in Resources */,
+				829F86FA2834D91800B86A70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AC46F0F13A629AF65625F7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hotline/Pods-Hotline-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hotline/Pods-Hotline-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hotline/Pods-Hotline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFFE7271A5CA9E3480EBBE52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hotline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		829F86E82834D91800B86A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826CD459287FD0AD002A7024 /* MeetingViewController.m in Sources */,
+				8279B7612A6EDD6600C2DC6F /* WebRTCViewController.m in Sources */,
+				829F86F72834D91800B86A70 /* ViewController.m in Sources */,
+				829F87132834F2FD00B86A70 /* CallManager.m in Sources */,
+				829F86F12834D91800B86A70 /* AppDelegate.m in Sources */,
+				829F87022834D91800B86A70 /* main.m in Sources */,
+				829F86F42834D91800B86A70 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		829F86F82834D91800B86A70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				829F86F92834D91800B86A70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		829F86FD2834D91800B86A70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				829F86FE2834D91800B86A70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		829F87032834D91800B86A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		829F87042834D91800B86A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		829F87062834D91800B86A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C805309C9B65A4C5988AD239 /* Pods-Hotline.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hotline/Hotline.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C6CJA6BGR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hotline/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Enable to show your face during video calls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable to allow voice during video calls.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgc.Hotline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		829F87072834D91800B86A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1433E65857640E4AF46DE33D /* Pods-Hotline.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hotline/Hotline.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C6CJA6BGR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hotline/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Enable to show your face during video calls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable to allow voice during video calls.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgc.Hotline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		829F86E72834D91800B86A70 /* Build configuration list for PBXProject "Hotline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829F87032834D91800B86A70 /* Debug */,
+				829F87042834D91800B86A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		829F87052834D91800B86A70 /* Build configuration list for PBXNativeTarget "Hotline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829F87062834D91800B86A70 /* Debug */,
+				829F87072834D91800B86A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 829F86E42834D91800B86A70 /* Project object */;
+}
