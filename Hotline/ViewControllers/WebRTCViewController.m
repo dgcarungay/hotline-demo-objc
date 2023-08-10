@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     if (self.urlString == nil || [self.urlString isEqual: @""] || [self.urlString isKindOfClass:[NSNull class]]) {
-        self.urlString = @"https://webrtc-demo-ios-557a85eef1a3.herokuapp.com/";
+        self.urlString = @"https://www.google.com/";
     }
     [self createWebview];
 }
@@ -47,6 +47,8 @@
     [config setDataDetectorTypes:WKDataDetectorTypeAll];
     [config setMediaTypesRequiringUserActionForPlayback:WKAudiovisualMediaTypeNone];
     [config setAllowsInlineMediaPlayback:YES];
+    [config setAllowsAirPlayForMediaPlayback:YES];
+    [config setAllowsPictureInPictureMediaPlayback:YES];
     
     return config;
 }
@@ -58,25 +60,30 @@
     [audioSession setCategory:AVAudioSessionCategoryMultiRoute error:&err];
     if (err) {
         NSLog(@"error setting audio category %@",err);
+        [self configureAudioSession];
     }
     [audioSession setMode:AVAudioSessionModeDefault error:&err];
     if (err) {
         NSLog(@"error setting audio Mode %@",err);
+        [self configureAudioSession];
     }
     double sampleRate = 44100.0;
     [audioSession setPreferredSampleRate:sampleRate error:&err];
     if (err) {
         NSLog(@"Error %ld, %@",(long)err.code, err.localizedDescription);
+        [self configureAudioSession];
     }
     NSTimeInterval bufferDuration = .005;
     [audioSession setPreferredIOBufferDuration:bufferDuration error:&err];
     if (err) {
         NSLog(@"Error %ld, %@",(long)err.code, err.localizedDescription);
+        [self configureAudioSession];
     }
-    [audioSession setActive:YES error:&err];
-    if (err) {
-        NSLog(@"Error set Active failed: %@", err.localizedDescription);
-    }
+//    [audioSession setActive:YES error:&err];
+//    if (err) {
+//        NSLog(@"Error set Active failed: %@", err.localizedDescription);
+//        [self configureAudioSession];
+//    }
     
     [self loadUrl];
 }
@@ -87,8 +94,6 @@
 
 - (void)loadUrl {
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]];
-    //[self.webview loadRequest:request];
-    
     [self verifyAVPermissionWithCompletion:^(AVAuthorizationStatus authStatus) {
         if (authStatus == AVAuthorizationStatusAuthorized) {
             NSLog(@"AV permission allowed.");

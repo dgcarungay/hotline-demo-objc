@@ -430,8 +430,8 @@
 				DEVELOPMENT_TEAM = C6CJA6BGR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hotline/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Enable to show your face during video calls.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable to allow voice during video calls.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to camera to allow your contacts to see you.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow access to your microphone to talk to your contacts in a call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -463,8 +463,8 @@
 				DEVELOPMENT_TEAM = C6CJA6BGR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hotline/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Enable to show your face during video calls.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable to allow voice during video calls.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to camera to allow your contacts to see you.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow access to your microphone to talk to your contacts in a call.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
