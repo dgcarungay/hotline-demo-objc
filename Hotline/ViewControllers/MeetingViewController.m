@@ -38,8 +38,7 @@
     // Do any additional setup after loading the view.
     [self.navigationController setNavigationBarHidden:YES];
     
-//    self.accessToken = @"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzc0MjUyZTA1YjcxNzZjOGNlMmUzMGFhOTU4MzFhNzU5LTE2NTc4MDU3NTgiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJzYW1wbGUtdXNlci0wMDEiLCJ2aWRlbyI6e319LCJpYXQiOjE2NTc4MDU3NTgsImV4cCI6MTY1NzgwOTM1OCwiaXNzIjoiU0s3NDI1MmUwNWI3MTc2YzhjZTJlMzBhYTk1ODMxYTc1OSIsInN1YiI6IkFDNGIzMWEyYjg2OTA0NWZjNDYyMTkxYmI1NDFlNDhmZGIifQ.WKP3I_Rb7bW7L9_DBp8puy4bX6Q6wgXVHJ3tytWvWm4";
-    
+    // Twilio Access Token
     self.accessToken = @"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzc0MjUyZTA1YjcxNzZjOGNlMmUzMGFhOTU4MzFhNzU5LTE2NTc4MDU3OTgiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJzYW1wbGUtdXNlci0wMDIiLCJ2aWRlbyI6e319LCJpYXQiOjE2NTc4MDU3OTgsImV4cCI6MTY1NzgwOTM5OCwiaXNzIjoiU0s3NDI1MmUwNWI3MTc2YzhjZTJlMzBhYTk1ODMxYTc1OSIsInN1YiI6IkFDNGIzMWEyYjg2OTA0NWZjNDYyMTkxYmI1NDFlNDhmZGIifQ.MZqW2c1TDZRKkp-jGZjef9vU2ueirX5VRSyncJHJsgo";
     
     UITapGestureRecognizer *screentap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapView:)];

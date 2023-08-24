@@ -26,10 +26,16 @@
     [self createWebview];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [[CallManager sharedInstance] endCall];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    //[[CallManager sharedInstance] endCall];
 }
 
 #pragma mark - Private functions
