@@ -7,6 +7,7 @@
 
 #import "WebRTCViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "CallManager.h"
 
 @interface WebRTCViewController ()
 
@@ -23,6 +24,12 @@
         self.urlString = @"https://www.google.com/";
     }
     [self createWebview];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [[CallManager sharedInstance] endCall];
 }
 
 #pragma mark - Private functions
